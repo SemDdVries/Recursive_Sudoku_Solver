@@ -38,8 +38,8 @@ Sample puzzles are provided under `Sudokus/` (`Sudoku1.txt` … `Sudoku5.txt`).
 | Name | Behavior |
 |------|----------|
 | `'fifo'` | Baseline: process arcs in first-in, first-out order. |
-| `'mrv'` | **Minimum remaining values**: prefer arcs whose head cell has the smallest domain (often reduces branching). |
-| `'lcv'` | Prefer arcs where either endpoint already has domain size 1 (near-finalized); otherwise falls back to index `0` (FIFO-like). |
+| `'mrv'` | **Minimum Remaining Values**: prefer arcs whose head cell has the smallest domain (often reduces branching). |
+| `'lcv'` | **Least Constraining Values**: prefer arcs where either endpoint already has domain size 1 (near-finalized); otherwise falls back to index `0` (FIFO-like). |
 
 ---
 
